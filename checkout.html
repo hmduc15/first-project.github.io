@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <title>checkout</title>
+</head>
+<body>
+    <section class="container-checkout">
+        <div class="checkout-close">X</div>
+          <div class="form-checkout">
+               <div class="right-checkout">
+                 <div class="billing-address">
+                    <h3 class="text-checkout">Billing Address</h3>
+                      <label for="fullname"><p class="mt-textinput"> <i class="fas fa-user"></i>Full name</p></label>
+                      <input class="input-checkout" type="text" name="" id="fullname" placeholder="Hoang Minh Duc">
+                       <p id="error-name" class="noctice-error"></p>
+                      <label for="email"><p class="mt-textinput"><i class="fas fa-envelope-square"></i>Email</p></label>
+                      <input class="input-checkout" type="email" name="" id="email" placeholder="example@gmail.com">
+                      <p id="error-email" class="noctice-error"></p>
+                      <label for="address"><p class="mt-textinput"><i class="far fa-address-card"></i>Address</p></label>
+                      <input class="input-checkout" type="text" name="" id="address" placeholder="16,Three Street,HoangSon">
+                      <p id="error-address" class="noctice-error"></p>
+                      <label for="city"><p class="mt-textinput"p><i class="fas fa-university"></i>City</p></label>
+                      <input class="input-checkout" type="text" name="" id="city" placeholder="Thanh hoa">
+                      <p id="error-city" class="noctice-error"></p>
+                      <p style="line-height: 42px;">
+                          <input  type="checkbox" name="" id="check-billing"> Shipping address same as billing <br>
+                          <button id="send-checkout" onclick="return checkBill()" >Continute to checkout</button>
+                      </p>
+                 </div>
+                 <div class="payment">
+                    <h3 class="text-checkout">Payment</h3>
+                    <p class="text-second" style="line-height: 40px;">Accepted Cards</p>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-stripe"></i>
+                    <i class="fab fa-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <label for="fullname-card"><p>Name on Card</p></label>
+                    <input class="input-checkout" type="text" name="" id="fulname-card" placeholder="Hoang Minh Duc">
+                      <p id="error-namecard" class="noctice-error"></p></p>
+                    <label for="number-card" ><p>Number on Card</p></label>
+                    <input class="input-checkout" type="text" name="" id="number-card" placeholder="111-222-333-444">
+                      <p id="error-numbercard" class="noctice-error"></p>
+                 </div>
+            </div>
+            <div class="left-checkout">
+                <h4>Cart<i class="fas fa-shopping-basket" style="margin-left: 10px;"></i></h4>
+                <p id="name-product" style="font-size: 23px;"></p>
+                <p id="price-product"style="font-size: 23px;"></p>
+            </div> 
+          </div>
+    </section>
+</body>
+  <script>
+     var fullName=document.getElementById("fullname");
+    var checkMail=document.getElementById("email");
+    var checkAddress=document.getElementById("address");
+    var checkCity=document.getElementById("city");
+    var checkBox=document.getElementById("check-billing");
+    var noticeName=document.getElementById("error-name");
+    var noticeEmail=document.getElementById("error-email");
+    var nocticeAddress=document.getElementById("error-address");
+    var nocticeCity=document.getElementById("error-city");
+    var letter=/^[A-Za-z]+(\s)+[A-Za-z]+(\s)+.+[^0-9]+$/;
+    var mail=/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;
+    var address=/./;
+    var number=/^[0-9]+$/;
+    var checkNameCard=document.getElementById("fulname-card");
+    var checkNumberCard=document.getElementById("number-card");
+    var noticeNameCard=document.getElementById("error-namecard");
+    var noticeNumberCard=document.getElementById("error-numbercard");
+  function checkBill(){
+       if(fullName.value.match(letter)){
+          if(checkMail.value.match(mail))
+          {
+            if(checkAddress.value.match(address))
+            {    
+                 if(checkNameCard.value.match(letter))
+                 { 
+                   nocticeNameCard.style.display='none';
+                     if(checkNumberCard.value.match(number)){
+                        noticeNumberCard.style.display='none';
+                      } else{
+                          noticeNumberCard.style.display='block';
+                          noticeNumberCard.innerHTML ='*pleae fill correct your Number of Card.';
+                       }
+                   } else{
+                    alert('nhap lai di');
+                   //  noticeNameCard.style.display='block';
+                   //  noticeNameCard.innerHTML ='*pleae fill correct your Name of Card.';
+                   }
+                nocticeAddress.style.display='none';
+             }else{
+                   nocticeAddress.style.display='block';
+                   nocticeAddress.innerHTML ='*pleae fill correct your address';
+                }
+                noticeEmail.style.display='none';
+          } 
+          else{
+                   noticeEmail.style.display='block';
+                   noticeEmail.innerHTML ='*pleae fill correct your email.';
+          } 
+           noticeName.style.display='none';
+         
+       }else{
+            noticeName.style.display='block';
+              noticeName.innerHTML ='*pleae fill correct your fullname.'; 
+       }
+    }
+  </script>
+</html>
