@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Zen+Antique+Soft&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Zen+Antique+Soft&family=Zen+Kaku+Gothic+Antique:wght@300;400&family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <title>watch-shop</title>
+</head>
+<body>
+        <nav>
+           <div class="menu">
+               <ul>
+                   <li><a id="back" href="#"><i class="fas fa-home icon-nav"></i>Home</a></li>
+                   <li> <a href="#Products"><i class="fas fa-shopping-bag icon-nav"></i>Products</a>
+                       <ul class="submenu">
+                           <li><a href="#woman"><i class="fas fa-female icon-nav"></i>Woman</a></li>
+                           <li><a href="#men"><i class="fas fa-male icon-nav"></i>Men</a></li> 
+                           <li><a href="#kid"><i class="fas fa-child"></i>Kids</a></li>
+
+                       </ul>
+                   </li>
+                   <li><a href="#service"><i class="fas fa-file-signature icon-nav"></i></i>Service</a></li>
+                   <li><a href="#introduce"><i class="fas fa-chart-pie icon-nav"></i>Introduce</a></li>
+                   <li><a href="#footer"><i class="far fa-id-card icon-nav"></i>Contact</a></li>
+               </ul>
+               <div class="cart-empty">
+                <i class="fas fa-cart-plus">
+                    <p>Shopping</p>
+                </i>
+             </div>
+           </div>
+           <div class="text-heading">Luxury Watch</div>
+       </nav>
+     <section>
+          <div class="banner-container">
+            <div class="banner-slideshow"><img src="images/bnr-2.jpg" alt="" style="width: 100%;"></div>
+            <div class="banner-slideshow"><img src="images/bnr-1.jpg" alt="" style="width: 100%;"></div>
+            <div class="banner-slideshow"><img src="images/bnr-3.jpg" alt="" style="width: 100%;"></div>
+          </div>
+         <br>
+     </section>
+     <section class="content">
+         <div class="products" id="Products">
+             <!--men-->
+            <div class="products-men mt-product" id="men">
+                <div class="header-products">
+                    <p>Men</p>
+            
+                </div>
+                <!--list-1-->
+                <div class="listproducts">
+                    <div class="productone">      
+                       <img class="image-hover"  src="image-watchshop/woman-1.jpg" alt="">
+                          <div class="details-hover addCart">
+                              <p class="name">Smart Watch Men One</p>
+                                <p class="prices">$1231</p>
+                                <button id="btn-seen" class="btn-product" >Detail</button>
+                                <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                          </div>
+                    </div>
+
+                    <div class="productone">
+                        <img class="image-hover"  src="image-watchshop/watch-9.jpg" alt="">
+                        <div class="details-hover addCart">
+                             <p class="name">Smart Watch Men Two</p>
+                              <p class="prices">$4000</p>
+                              <button id="btn-seen" class="btn-product" >Detail</button>
+                              <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                        </div>
+                    </div>
+                  <div class="productone">
+                    <img class="image-hover"  src="image-watchshop/watch-8.jpg" alt="">
+                    <div class="details-hover addCart">
+                       <p class="name">Smart Watch Three </p>
+                          <p class="prices">$6000</p>
+                          <button id="btn-seen" class="btn-product" >Detail</button>
+                          <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                    </div>
+                  </div>
+                  <div class="productone">
+                    <img class="image-hover"  src="image-watchshop/watch-7.jpg" alt="">
+                    <div class="details-hover addCart">
+                         <p class="name">Smart Watch Men Four</p>
+                          <p class="prices">$1070</p>
+                          <button id="btn-seen" class="btn-product" >Detail</button>
+                          <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                    </div>
+                </div>
+             </div>
+             <!--list-2-->
+             <div class="listproducts">
+                <div class="productone">      
+                <img class="image-hover"  src="image-watchshop/watch-11.jpg" alt="">
+                      <div class="details-hover addCart">
+                         <p class="name">Smart Watch Men Five</p>
+                            <p class="prices">$1990</p>
+                            <button id="btn-seen" class="btn-product" >Detail</button>
+                            <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                      </div>
+                </div>
+
+                <div class="productone">
+                    <img class="image-hover"  src="image-watchshop/watch-12.jpg" alt="">
+                    <div class="details-hover addCart">
+                         <p class="name">Smart Watch Men Six</p>
+                         <p class="prices">$1100</p>
+                         <button id="btn-seen" class="btn-product" >Detail</button>
+                         <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                    </div>
+              </div>
+
+              <div class="productone">
+                <img class="image-hover"  src="image-watchshop/watch-11.jpg" alt="">
+                <div class="details-hover addCart">
+                    <p class="name">Smart Watch Men Seven </p>
+                    <p class="prices">$1008</p>
+                    <button id="btn-seen" class="btn-product" >Detail</button>
+                    <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                </div>
+              </div>
+
+              <div class="productone">
+                <img class="image-hover"  src="image-watchshop/watch-13.jpg" alt="">
+                <div class="details-hover addCart">
+                 <p class="name">Smart Watch Men Eight</p>
+                <p class="prices">$1220</p>
+                <button id="btn-seen" class="btn-product" >Detail</button>
+                <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                </div>
+            </div>
+         </div>
+            </div> 
+             <!--woman-->
+            <div class="products-woman mt-product" id="woman">
+                <div class="header-products">
+                    <p>Woman</p>
+            
+                </div>
+                <!--list-1-->
+                <div class="listproducts">
+                    <div class="productone">
+                          <img class="image-hover"  src="image-watchshop/watch-6.jpg" alt="">
+                          <div class="details-hover addCart">
+                            <p class="name">Smart Watch Woman One</p>
+                            <p class="prices">$1245</p>
+                            <button id="btn-seen" class="btn-product" >Detail</button>
+                            <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                          </div>
+                    </div>
+
+                    <div class="productone">
+                        <img class="image-hover"  src="image-watchshop/watch-5.jpg" alt="">
+                        <div class="details-hover addCart">
+                          <p class="name">Smart Watch Woman Two</p>
+                          <p class="prices">$1567</p>
+                          <button id="btn-seen" class="btn-product" >Detail</button>
+                          <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                       </div>
+                    </div>
+                  <div class="productone">
+                    <img class="image-hover"  src="image-watchshop/watch-4.jpg" alt="">
+                    <div class="details-hover addCart">
+                        <p class="name">Smart Watch Woman Three </p>
+                        <p class="prices">$1987</p>
+                        <button id="btn-seen" class="btn-product" >Detail</button>
+                        <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                    </div>
+                  </div>
+
+                  <div class="productone">
+                    <img class="image-hover"  src="image-watchshop/watch-3.jpg" alt="">
+                    <div class="details-hover addCart">
+                        <p class="name">Smart Watch Woman Four</p>
+                        <p class="prices">$2000</p>
+                        <button id="btn-seen" class="btn-product" >Detail</button>
+                        <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                    </div>
+              </div>
+             </div>
+             <!--list-2-->
+             <div class="listproducts">
+                <div class="productone">
+                      <img class="image-hover"  src="image-watchshop/woman-4.jpeg" alt="">
+                      <div class="details-hover addCart">
+                        <p class="name">Smart Watch Woman Five</p>
+                        <p class="prices">$1245</p>
+                        <button id="btn-seen" class="btn-product" >Detail</button>
+                        <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                      </div>
+                </div>
+
+                <div class="productone">
+                    <img class="image-hover"  src="image-watchshop/woman-5.jpeg" alt="">
+                    <div class="details-hover addCart">
+                        <p class="name">Smart Watch Woman Six</p>
+                          <p class="prices">$1567</p>
+                          <button id="btn-seen" class="btn-product" >Detail</button>
+                          <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                    </div>
+              </div>
+
+              <div class="productone">
+                <img class="image-hover"  src="image-watchshop/woman-6.jpg" alt="">
+                <div class="details-hover addCart">
+                    <p class="name">Smart Watch Woman Seven </p>
+                      <p class="prices">$1987</p>
+                      <button id="btn-seen" class="btn-product" >Detail</button>
+                      <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                </div>
+              </div>
+
+              <div class="productone">
+                <img class="image-hover"  src="image-watchshop/woman-7.jpeg" alt="">
+                <div class="details-hover addCart">
+                    <p class="name">Smart Watch Woman Eight</p>
+                      <p class="prices">$2000</p>
+                      <button id="btn-seen" class="btn-product" >Detail</button>
+                      <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                </div>
+          </div>
+         </div>
+         </div>
+       <!--Kid-->
+       <div class="products-kid mt-product" id="kid">
+        <div class="header-products">
+            <p>Kid</p>
+        </div>
+        <div class="listproductskid">
+            <div class="productone">
+                  <img class="image-hover"  src="image-watchshop/watch-14.jpg" alt="">
+                  <div class="details-hover addCart">
+                    <p class="name">Smart Watch Kid One</p>
+                        <p class="prices">$245</p>
+                        <button id="btn-seen" class="btn-product" >Detail</button>
+                        <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                  </div>
+            </div>
+
+            <div class="productone">
+                <img class="image-hover"  src="image-watchshop/men-3.jpg" alt="">
+                <div class="details-hover addCart">
+                    <p class="name">Smart Watch Kid Two</p>
+                      <p class="prices">$567</p>
+                    <button id="btn-seen" class="btn-product" >Detail</button>
+                    <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+                </div>
+          </div>
+
+          <div class="productone" >
+            <img class="image-hover"  src="image-watchshop/watch-10.jpg" alt="">
+            <div class="details-hover addCart">
+                <p class="name">Smart Watch Kid Three </p>
+                <p class="prices">$789</p>
+                <button id="btn-seen" class="btn-product" >Detail</button>
+                <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+            </div>
+          </div>
+
+          
+          <div class="productone">
+            <img class="image-hover"  src="image-watchshop/kid-2.jpeg" alt="">
+            <div class="details-hover addCart">
+                <p class="name">Smart Watch Kid Four </p>
+                  <p class="prices">$789</p>
+               <div class="btn-product">
+                <button id="btn-seen" class="btn-product" >Detail</button>
+                <button id="btn-buy"  class="btn-product"onclick="showModal(this)" >Add to cart</button>
+               </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    </div>
+ </section>
+        <section class="service" id="service">
+            <h2 class="text-contentservice f-family-service">SEll YOUR WATCH</h2>
+             <div class="content-form dis-flex">
+                 <form action="" name="form-service" id="form-service">
+                     <div>
+                         <label for="border-input">Name</label>
+                         <input type="text" name="username" id="border-input" >
+                         <i class="far fa-user-circle"></i> 
+                         <p class="note">Full name</p> <br>
+                     </div>
+                       <div>
+                           Telephone<input type="tel" name="telephone" id="border-input">
+                           <i class="fas fa-phone"></i>
+                           <p class="note">Phone number</p> <br>
+                       </div>
+                       <div>
+                           Email <input type="email" name="email" id="border-input">
+                           <i class="fas fa-envelope-square"></i>
+                           <p class="note">Your email</p> <br>
+                       </div>
+                       <div>
+                           Trademark <select name="" id="select-one">
+                                <option value="">Seclect: </option>
+                               <option value="">Rolex</option>
+                               <option value="">Hublot</option>
+                               <option value="">Chopard</option>
+                               <option value="">Giard-Perreguax</option>
+                               <option value="">Omega</option>
+                               <option value="">Tissot</option>
+                             </select> 
+                             <p class="note-eror">Select one</p> <br>
+                       </div>
+                       <div>
+                           Status 
+                          <input type="checkbox" name="New" id="select-checkbox" style="margin-left: 30px;"> New 
+                           <input type="checkbox" name="Old" id="select-checkbox" style="margin-left: 30px;"> Old
+                           <p class="note-checkbox">New or Old</p> <br>
+                       </div>
+                          <button id="send-price">Send Price</button>
+                 </form>
+             </div>
+             <div class="service-note">
+                      <h4 class="text-headingservice">Place note: </h4>
+                    <ul>
+                        <li>
+                           You must complete our used watch collection  form to receive 
+                           the fastest, most accurate quote.
+                        </li>
+                        <li>
+                           If you do not provide complete information about the exact picture
+                            of the watch, we will reject your offer to negotiate the acquisition of the watch.
+                        </li>
+                        <li>
+                           Provide as much information about your watch as possible such as reference number 
+                           (Serial Number), Model, usage status, etc.
+                        </li>
+                        <li>
+                           Watch brands we buy:  <a href="" class="a-style"> Rolex </a> , <a href="" class="a-style">Omega</a>  , <a href="" class="a-style"> Patek Philippe</a> , <a href="" class="a-style">Breitling</a>  , <a href="" class="a-style">IWC</a> , <a href="" class="a-style"> Cartier</a> , <a href="" class="a-style">TAG Heuer </a>,  <a href="" class="a-style">Audemars Piguet</a> ,
+                           <a href="" class="a-style">Vacheron Constantin</a>
+                        </li>
+                  </ul>
+                    <div class="btn-service">
+                          <button id="btn-call">Contact now</button> <br>
+                           <button id="btn-chat">Online chat</button>
+                    </div>
+             </div>
+       </section> 
+       <section class="introduce" id="introduce">
+            <h4 class="heading-introduce">INTRODUCE</h4>
+            <div class="content-introduce">
+              <p>
+                <strong>
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align:inherit ;">Luxury Watch</font>
+                    </font>
+                </strong>
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align:inherit ;">is a business store in the field of Buying,selling and
+                            repairing high-end genuine wristwatches,according to
+                        </font>
+                    </font>
+                    <strong>
+                        <font style="vertical-align: inherit;">
+                          <font style="vertical-align:inherit ;">Business</font>
+                        </font>
+                    </strong>
+              </p>
+              <p>
+                <strong>
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align:inherit ;">Luxury Watch is</font>
+                    </font>
+                </strong>
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align:inherit ;">
+                          committed to selling only genuine Old - New wristwatches from high-end watch brands such as Rolex, Omega, Patek Philippe, Hublot, and many more. Every watch available in our store is authenticated by an experienced watch specialist, ensuring that the product before 
+                           reaching the customer is the best product, and the price is also very competitive.
+                        </font>
+                    </font>
+              </p>
+              <p>
+             <font style="vertical-align: inherit;">
+                <font style="vertical-align:inherit ;">
+                Besides, we are also a reliable place to
+                </font>
+              </font>
+              <strong>
+                  <font style="vertical-align: inherit;">
+                      <font style="vertical-align:inherit ;">
+                          buy used watches
+                      </font>
+                  </font>
+              </strong>
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align:inherit ;">
+                    when you want to sell your watch. The purchasing process is very simple,
+                    you just need to send information and pictures of the watch to us by phone:
+                </font>
+             </font>
+             <strong>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align:inherit ;">
+                        0969440765
+                    </font>
+                </font>
+            </strong>
+              <font style="vertical-align: inherit;">
+                    <font style="vertical-align:inherit ;">
+                      or Email:
+                    </font>
+                </font>
+                <strong>
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align:inherit ;">
+                            hmduc.m10@gmail.com
+                        </font>
+                    </font>
+                </strong>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align:inherit ;">
+                      or 
+                    </font>
+                </font>
+                <strong>
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align:inherit ;">
+                            online quote form,
+                        </font>
+                    </font>
+                </strong>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align:inherit ;">
+                        , specialist at the store will review, evaluate and will respond to you shortly with a price we offer to you. 
+                        If you agree, we will receive the watch and you will be paid immediately.
+                    </font>
+                </font>
+              </p>
+            </div>
+       </section>
+       <section class="footer" id="footer">
+           <div class="contact color-footer">
+               <div class="addres">
+                   <h3>Luxury Watch-ADDRESS TO BUY
+                     AND SELL GENUIE PRESSIGE WATCHES
+                    </h3>
+                     <div class="content-address">
+                         <p>
+                          <strong>
+                            <font style="vertical-align: inherit;">
+                             <font style="vertical-align: inherit;">American: </font>   
+                            </font>
+                          </strong>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Brooklyn Army Terminal - Building A
+                                    140A 58th Street, Suite 6N - 6th Floor
+                                    Brooklyn, NY 11220
+                                </font>
+                            </font>
+                         </p>
+                         <p>
+                            <strong>
+                              <font style="vertical-align: inherit;">
+                               <font style="vertical-align: inherit;">England: </font>   
+                              </font>
+                            </strong>
+                              <font style="vertical-align: inherit;">
+                                  <font style="vertical-align: inherit;">
+                                      Bulova Uk 7 Ashvilled Way Wokingham BerShire United Kingdom.
+                                  </font>
+                              </font>
+                           </p>
+                           <p>
+                            <strong>
+                              <font style="vertical-align: inherit;">
+                               <font style="vertical-align: inherit;">VietNam: </font>   
+                              </font>
+                            </strong>
+                              <font style="vertical-align: inherit;">
+                                  <font style="vertical-align: inherit;">
+                                     Cankiem village, HoangSon commune, ThanhHoa province;
+                                  </font>
+                              </font>
+                           </p>
+                     </div>
+               </div>
+               <div class="customer">
+                   <h3>FOR CUSTOMERS</h3>
+                   <p>Return Policy</p>
+                   <p>Information privacy Policy</p>
+                   <p>Product Warranty Policy</p>
+                   <p>Payment Guide</p>
+                  <div class="icon-follow">
+                    <a href="https://www.facebook.com/hduc1512.messi/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/hduc1512.messi/" target="_blank"><i  class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/hduc1512.messi/" target="_blank"><i class="fab fa-google"></i></a>
+                    <a href="https://www.facebook.com/hduc1512.messi/" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+                    <a href="https://www.facebook.com/hduc1512.messi/" target="_blank"><i class="fab fa-skype"></i></a>
+                    <a href="https://www.facebook.com/hduc1512.messi/" target="_blank"><i class="fab fa-dribbble"></i></a>
+                   </div>
+               </div>
+               <div class="map"></div>
+           </div>
+    </section>
+   <sec tion class="checkout">
+    <div class="checkout-close">X</div>
+      <div class="form-checkout">
+           <div class="right-checkout">
+             <div class="billing-address">
+                <h3 class="text-checkout">Billing Address</h3>
+                  <label for="fullname"><p class="mt-textinput"> <i class="fas fa-user"></i>Full name</p></label>
+                  <input class="input-checkout" type="text" name="" id="fullname" placeholder="Hoang Minh Duc">
+                   <p id="error-name" class="noctice-error"></p>
+                  <label for="email"><p class="mt-textinput"><i class="fas fa-envelope-square"></i>Email</p></label>
+                  <input class="input-checkout" type="email" name="" id="email" placeholder="example@gmail.com">
+                  <p id="error-email" class="noctice-error"></p>
+                  <label for="address"><p class="mt-textinput"><i class="far fa-address-card"></i>Address</p></label>
+                  <input class="input-checkout" type="text" name="" id="address" placeholder="16,Three Street,HoangSon">
+                  <p id="error-address" class="noctice-error"></p>
+                  <label for="city"><p class="mt-textinput"p><i class="fas fa-university"></i>City</p></label>
+                  <input class="input-checkout" type="text" name="" id="city" placeholder="Thanh hoa">
+                  <p id="error-city" class="noctice-error"></p>
+                  <p style="line-height: 42px;">
+                      <input  type="checkbox" name="" id="check-billing"> Shipping address same as billing <br>
+                      <button id="send-checkout" onclick=" checkBill()" ><a id="home" href="#">Send Billing</a></button>
+                  </p>
+             </div>
+             <div class="payment">
+              <div>
+                <h3 class="text-checkout">Payment</h3>
+                <p class="text-second" style="line-height: 40px;">Accepted Cards</p>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-stripe"></i>
+                <i class="fab fa-paypal"></i>
+                <i class="fab fa-cc-amex"></i>
+             </div>
+                <label for="fullname-card"><p>Name on Card</p></label>
+                <input class="input-checkout" type="text" name="" id="fullname-card" placeholder="Hoang Minh Duc">
+                  <p id="error-namecard" class="noctice-error"></p></p>
+                <label for="number-card" ><p>Number on Card</p></label>
+                <input class="input-checkout" type="text" name="" id="number-card" placeholder="111-222-333-444">
+                  <p id="error-numbercard" class="noctice-error"></p>
+             </div>
+        </div>
+        <div class="left-checkout">
+            <h4>Cart<i class="fas fa-shopping-basket" style="margin-left: 10px;"></i></h4>
+            <input id="name-product" style="font-size: 23px;"></input>
+            <input id="price-product"style="font-size: 23px;"></input>
+        </div> 
+      </div>
+</section>
+    
+</body>
+<script src="client.js"></script>
+</html>

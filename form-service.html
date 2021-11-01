@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Zen+Antique+Soft&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <title>test</title>
+</head>
+<body>
+      <section class="service">
+             <h3 class="text-heading f-family-service">SEll YOUR WATCH</h3>
+              <div class="content-form dis-flex">
+                  <form action="" name="form-service" id="form-service">
+                      <div>
+                          <label for="border-input">Name</label>
+                          <input type="text" name="username" id="border-input" >
+                          <i class="far fa-user-circle"></i> 
+                          <p class="note">Full name</p> <br>
+                      </div>
+                        <div>
+                            Telephone<input type="tel" name="telephone" id="border-input">
+                            <i class="fas fa-phone"></i>
+                            <p class="note">Phone number</p> <br>
+                        </div>
+                        <div>
+                            Email <input type="email" name="email" id="border-input">
+                            <i class="fas fa-envelope-square"></i>
+                            <p class="note">Your email</p> <br>
+                        </div>
+                        <div>
+                            Trademark <select name="" id="select-one">
+                                 <option value="">Seclect: </option>
+                                <option value="">Rolex</option>
+                                <option value="">Hublot</option>
+                                <option value="">Chopard</option>
+                                <option value="">Giard-Perreguax</option>
+                                <option value="">Omega</option>
+                                <option value="">Tissot</option>
+                              </select> 
+                              <p class="note-eror">Select one</p> <br>
+                        </div>
+                        <div>
+                            Status 
+                           <input type="checkbox" name="New" id="select-checkbox" style="margin-left: 30px;"> New 
+                            <input type="checkbox" name="Old" id="select-checkbox" style="margin-left: 30px;"> Old
+                            <p class="note-checkbox">New or Old</p> <br>
+                        </div>
+                           <button id="send-price">Send Price</button>
+                  </form>
+              </div>
+              <div class="service-note">
+                       <h4 class="text-headingservice">Place note: </h4>
+                     <ul>
+                         <li>
+                            You must complete our used watch collection  form to receive 
+                            the fastest, most accurate quote.
+                         </li>
+                         <li>
+                            If you do not provide complete information about the exact picture
+                             of the watch, we will reject your offer to negotiate the acquisition of the watch.
+                         </li>
+                         <li>
+                            Provide as much information about your watch as possible such as reference number 
+                            (Serial Number), Model, usage status, etc.
+                         </li>
+                         <li>
+                            Watch brands we buy:  <a href="" class="a-style"> Rolex </a> , <a href="" class="a-style">Omega</a>  , <a href="" class="a-style"> Patek Philippe</a> , <a href="" class="a-style">Breitling</a>  , <a href="" class="a-style">IWC</a> , <a href="" class="a-style"> Cartier</a> , <a href="" class="a-style">TAG Heuer </a>,  <a href="" class="a-style">Audemars Piguet</a> ,
+                            <a href="" class="a-style">Vacheron Constantin</a>
+                         </li>
+                     </ul>
+              </div>
+      </section>
+</body> 
+  <script>
+       var fullName=document.getElementById("fullname");
+    var checkMail=document.getElementById("email");
+    var checkAddress=document.getElementById("address");
+    var checkCity=document.getElementById("city");
+    var checkBox=document.getElementById("checkbox-billing");
+     var letter=/^[A-Za-z]+$/;
+  //  var mail=/^([\W\.])+@([a-za-z0-9\-])+\.([a-zA-Z])(\.[a-zA-Z]{2,4})+(\.[a-zA-Z]{2,4)}?$/;
+    function inputCheck(){
+       if(fullName.value.match(letter)){
+            alert('ban da nhap dung');
+         return true;
+       }else{
+           alert('ban da nhap sai')
+           return false;
+       }
+    }
+  </script>
+</html>

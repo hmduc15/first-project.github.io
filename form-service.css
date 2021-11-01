@@ -1,0 +1,114 @@
+.service{
+    background-color: #efefef;
+}
+.dis-flex{
+    display: flex;
+}
+.f-family-service{
+    font-family: 'Festive', cursive;
+    font-family: 'Zen Antique Soft', serif;
+}
+
+.a-style{
+    text-decoration: none;
+    color: blue;
+}
+#form-service{
+    width: 540px;
+    background-color: azure;
+    margin-left: 36px;
+    padding-top: 30px;
+    height: 100%;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+.text-heading{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 100;
+}
+
+.content-form div{
+   height: 70px;
+   font-family: 'Festive', cursive;
+   font-family: 'Zen Antique Soft', serif;
+   font-family: 'Zen Kaku Gothic Antique', sans-serif;
+   font-size: 20px;
+}
+.note{
+    opacity: 0.4;
+    font-style: italic;
+    width: 128px;
+    margin-top: -18px;
+}
+
+.note-eror{
+    opacity: 0.4;
+    font-style: italic;
+    width: 96px;
+    margin-top: -15px;
+}
+.note-checkbox{
+    opacity: 0.4;
+    font-style: italic;
+    margin-top: -7px;
+    letter-spacing: -2px;
+}
+#border-input {
+    margin-left: 61px;
+    height: 37px;
+    width: 300px;
+    outline: antiquewhite;
+    border: 1px #efefef solid;
+    border-radius: 5px;
+}
+#select-one{
+    margin-left: 30px;
+    height: 36px;
+    outline: none;
+    width: 300px;
+    border-radius: 5px;
+    font-family: 'Festive', cursive;
+    font-family: 'Zen Antique Soft', serif;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+#send-price{
+    margin: 30px 221px;
+    width: 98px;
+    height: 28px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 17px;
+}
+#send-price:hover{
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.content-form i{
+   position: absolute;
+    left: 467px;
+    margin-top: 11px;
+
+}
+
+.service-note{
+   width: 500px;
+   position: absolute;
+   top: 93px;
+   right: 69px;
+}
+.text-headingservice{
+   font-size: 25px;
+   font-family: Open Sans,sans-serif;
+   font-weight: 400;
+   margin: 0;
+}
+.service-note ul li{
+     font-style: italic;
+     font-size: 23px;
+     margin-top: 10px;
+}
